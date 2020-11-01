@@ -5,8 +5,8 @@
 }
 
 body {
-    color: #fff;
-    background: #d8d8d8;
+    color: var(--color-primary);
+    background: var(--color-background-primary);
 }
 
 body, input, button, textarea {
