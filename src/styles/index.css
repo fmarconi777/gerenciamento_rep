@@ -10,6 +10,7 @@
     --color-line-in-white: #e6e6f0;
     --color-input-background: #f8f8fc;
     --color-button-background: #32264d;
+    --color-button-hover: #6a5f81;
     --color-button-text: #ffffff;
     font-size: 60%; /* rem control measures */
 }

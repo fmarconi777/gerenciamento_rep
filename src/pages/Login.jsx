@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/login.css'
 import logo from '../images/logo-cbtu.png';
 
@@ -19,7 +20,9 @@ function Login() {
                     <p>Senha</p>
                     <input type="text"/>
                 </div>
-                <button>Login</button>
+                <Link to="/app" className="login-button">
+                    Login
+                </Link>
             </div>
         </div>
     );
