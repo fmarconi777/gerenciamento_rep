@@ -81,10 +81,11 @@
     transition: backgraundo-color 0.2s;
 }
 
+.container .login-button:hover {
+    background: var(--color-button-hover);
+}
+
 .container .login-button .sign {
     margin-left: 0.5rem;
 }
 
-.container .login-button:hover {
-    background: var(--color-button-hover);
-}

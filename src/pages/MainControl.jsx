@@ -1,9 +1,13 @@
 import React from 'react';
+import SideBar from '../components/SideBar';
+import PageHeader from "../components/PageHeader";
+import '../styles/pages/maincontrol.css'
 
 function MainControl() {
     return (
-        <div>
-            <h1>Ah eu aqui!</h1>
+        <div id="main-page">
+            <SideBar />
+            <PageHeader />
         </div>
     );
 }
