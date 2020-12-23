@@ -1,17 +1,18 @@
 import React from 'react';
 import SideBar from '../components/SideBar';
 import PageHeader from '../components/PageHeader';
-import ContentMain from '../components/ContentMain';
-import '../styles/pages/maincontrol.css'
+import ContentReserve from '../components/ContentReserve';
 
-function MainControl() {
+import '../styles/pages/operational.css';
+
+function Operational(props) {
     return (
         <div id="main-page">
             <SideBar />
             <PageHeader />
-            <ContentMain></ContentMain>
+            <ContentReserve />
         </div>
-    );
+    )
 }
 
-export default MainControl;
+export default Operational;

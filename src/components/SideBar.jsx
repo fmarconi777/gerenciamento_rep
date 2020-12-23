@@ -35,7 +35,7 @@ function DropdownMenu(props) {
 
 function DropdownItem (props) {
     return (
-        <li className="menu-item">
+        <li className="menu-item">            
             <Link to={props.link} className="item-name" >
                 {props.item_name}
             </Link>
@@ -54,8 +54,8 @@ function SideBar(props) {
                     <ButtonDrop leftIcon={<AiOutlineDashboard/>} name="Início" link="/app" />
                     <ButtonDrop leftIcon={<FaClock/>} name="Relógios" link="#" >
                         <DropdownMenu>
-                            <DropdownItem item_name="Em operação" link="#" />
-                            <DropdownItem item_name="Reserva" link="#" />
+                            <DropdownItem item_name="Em operação" link="/operational" />
+                            <DropdownItem item_name="Reserva" link="inreserve" />
                             <DropdownItem item_name="Em manutenção" link="#" />
                         </DropdownMenu>
                     </ButtonDrop>
