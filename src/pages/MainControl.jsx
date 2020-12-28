@@ -1,15 +1,18 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import SideBar from '../components/SideBar';
 import PageHeader from '../components/PageHeader';
-import ContentMain from '../components/ContentMain';
-import '../styles/pages/maincontrol.css'
+import Content from '../components/Content';
+import '../styles/pages/maincontrol.css';
 
 function MainControl() {
     return (
         <div id="main-page">
-            <SideBar />
+            <BrowserRouter>
+                <SideBar />
+                <Content></Content>
+            </BrowserRouter>
             <PageHeader />
-            <ContentMain></ContentMain>
         </div>
     );
 }
