@@ -22,12 +22,16 @@
 .Table th {
     color: var(--color-title-in-primary);
     background-color: var(--color-secundary);
-  }
+}
 
 .Table tr:nth-child(even) {
     background-color: var(--color-background-primary);
-  }
+}
 
 .Table tr:nth-child(odd) {
     background-color: var(--color-primary);
-  }
+}
+
+.Table td {
+    text-align: center;
+}
