@@ -61,11 +61,11 @@ function SideBar(props) {
                     </ButtonDrop>
                     <ButtonDrop leftIcon={<FaHeadset/>} name="Chamados" link="#" >
                         <DropdownMenu>
-                            <DropdownItem item_name="Abertos" link="#" />
-                            <DropdownItem item_name="Fechados" link="#" />
+                            <DropdownItem item_name="Abertos" link="/app/opencalls" />
+                            <DropdownItem item_name="Fechados" link="/app/closedcalls" />
                         </DropdownMenu>
                     </ButtonDrop>
-                    <ButtonDrop leftIcon={<AiFillSetting/>} name="Configurações" link="#" />
+                    <ButtonDrop leftIcon={<AiFillSetting/>} name="Configurações" link="/app/configuration" />
                 </ButtonsNav>
             </aside>
         </nav>
