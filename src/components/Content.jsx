@@ -6,18 +6,30 @@ import Maintenance from '../pages/views/Maintenance';
 import OpenCalls from '../pages/views/OpenCalls';
 import ClosedCalls from '../pages/views/ClosedCalls';
 import Configuration from '../pages/views/Configuration';
+import RegisteroLcation from '../pages/views/RegisterLocation';
+import RegisterTerminal from '../pages/views/RegisterTerminal';
+import RegisterREP from '../pages/views/RegisterREP';
+import RegisterDefect from '../pages/views/RegisterDefect';
+import RegisterEmployee from '../pages/views/RegisterEmployee';
+import NotFound from '../pages/NotFound';
 import '../styles/components/content.css';
 
 function Content() {
     return (
         <main className="content-page" >
             <Switch>
-                <Route path="/app/operational" component={Operational} />
-                <Route path="/app/inreserve" component={InReserve} />
-                <Route path="/app/maintenance" component={Maintenance} />
-                <Route path="/app/opencalls" component={OpenCalls} />
-                <Route path="/app/closedcalls" component={ClosedCalls} />
-                <Route path="/app/configuration" component={Configuration} />
+                <Route path="/operational" component={Operational} />
+                <Route path="/inreserve" component={InReserve} />
+                <Route path="/maintenance" component={Maintenance} />
+                <Route path="/opencalls" component={OpenCalls} />
+                <Route path="/closedcalls" component={ClosedCalls} />
+                <Route path="/configuration" component={Configuration} />
+                <Route path="/registerlocation" component={RegisteroLcation} />
+                <Route path="/registerterminal" component={RegisterTerminal} />
+                <Route path="/registerrep" component={RegisterREP} />
+                <Route path="/registerdefect" component={RegisterDefect} />
+                <Route path="/registeremployee" component={RegisterEmployee} />
+                <Route component={NotFound} />
             </Switch>
         </main>
     )

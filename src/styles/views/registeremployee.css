@@ -1,0 +1,104 @@
+.register-employee {
+    width: 90%;
+}
+
+.register {
+    width: fit-content;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.register h2 {
+    padding: 10px 0px 10px 0px;
+}
+
+.error {
+    margin: 0 auto 15px auto;
+    width: fit-content;
+    background: rgba(255, 0, 0, 0.4);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.register form {
+    border: 1px solid var(--color-secundary);
+    border-radius: 1rem;
+}
+
+.register form label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.register form .form-grid {
+    display: grid;
+    grid-template-areas: 
+        'nome nome . login login login'
+        'area area . status status status'
+        'matricula matricula . senha senha senha'
+        '. . cadastrar . . .';
+}
+
+.register form label input {
+    margin-left: 10px;
+}
+
+.register form label span {
+    margin-right: 10rem;
+}
+
+.register form .Nome {
+    grid-area: nome;    
+}
+
+.register form .Login {
+    grid-area: login;
+}
+
+.register form .Area {
+    grid-area: area;
+}
+
+.register form .Status {
+    grid-area: status;
+}
+
+.register form .Matricula {
+    grid-area: matricula;
+}
+
+.register form .Senha {
+    grid-area: senha;
+}
+
+.register form .Cadastrar {
+    grid-area: cadastrar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-button-background);
+    color: var(--color-button-text);
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    text-decoration: none;
+    margin: 1rem 0;
+    transition: background 0.2s;
+}
+
+.register form .Cadastrar:hover {
+    background: var(--color-button-hover);
+}
+
+hr {
+    margin-top: 1.6rem;
+}
+
+.employee-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+}

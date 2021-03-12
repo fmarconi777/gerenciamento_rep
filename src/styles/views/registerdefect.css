@@ -1,0 +1,27 @@
+.register-defect {
+    width: 90%;
+}
+
+.register form .form-grid-defect {
+    display: inline-block;
+    align-items: center;  
+    justify-content: center;  
+}
+
+.register form textarea {
+    margin-left: 10px;
+    border-radius: 0.5rem;
+    resize: none;
+    height: auto;
+}
+
+.register form .form-grid-defect button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.defect-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+}

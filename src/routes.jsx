@@ -1,15 +1,19 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Router , Switch, Route } from 'react-router-dom';
+import PrivateRoute from './authentication/PrivateRoute';
 import Login from './pages/Login';
 import MainControl from './pages/MainControl';
+import NotFound from './pages/NotFound';
+import { history } from './history';
 
 function Routes() {
     return (
-        <BrowserRouter>
+        <Router history={history} >
             <Switch>
-                <Route exact path="/" component={Login} />
-                <Route path="/app" component={MainControl} />
+                <Route path="/login" component={Login} />
+                <PrivateRoute path="/" component={MainControl} />
+                <PrivateRoute component={NotFound} />
             </Switch>
-        </BrowserRouter>
+        </Router>
     )
 }
 

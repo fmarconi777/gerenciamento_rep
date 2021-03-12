@@ -40,20 +40,35 @@
     margin-bottom: 0.8rem;
 }
 
+.container .error {
+    background: rgba(255, 0, 0, 0.4);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
 .container .input-box {
     position: relative;
     width: 90%;
 }
 
-.container .input-box p {
+.container .input-box label {
     float: left;
     color: var(--color-text-in-primary);
     margin-top: 0.8rem;
 }
 
-.container .input-box .icon {
+.container .input-box .icon-user {
     position: absolute;
     top: 3.4rem;
+    left: -0.1rem;    
+}
+
+.container .input-box .icon-password {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+    position: absolute;
+    padding: 0.5rem;
+    top: 3.5rem;
     left: -0.1rem;    
 }
 
@@ -64,28 +79,29 @@
     padding: 0.5rem;
     padding-left: 5rem;
     box-sizing: border-box;
+    outline: none;
 }
 
-.container .login-button {
+.container button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
     background: var(--color-button-background);
     color: var(--color-button-text);
     width: 10rem;
     height: 3.5rem;
     border-radius: 0.8rem;
+    border: none;
     text-decoration: none;
-    transition: backgraundo-color 0.2s;
+    margin: 3rem 0;
+    transition: background 0.2s;
 }
 
-.container .login-button:hover {
+.container button:hover {
     background: var(--color-button-hover);
 }
 
-.container .login-button .sign {
+.container button .sign {
     margin-left: 0.5rem;
 }
 

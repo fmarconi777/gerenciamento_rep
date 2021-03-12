@@ -1,0 +1,24 @@
+.register-location {
+    width: 90%;
+}
+
+.register form .form-grid-location {
+    display: grid;
+    grid-template-areas: 
+        'nome nome . sigla sigla'
+        '. . cadastrar . .';
+}
+
+.register form .Nome {
+    grid-area: nome;    
+}
+
+.register form .Sigla {
+    grid-area: sigla;
+}
+
+.location-table {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+}

@@ -1,0 +1,8 @@
+.viewbackground {
+    background-color: var(--color-background-content);
+    height: 100%;
+    overflow-y: scroll;
+    color: var(--color-text-content);
+    display: flex;
+    justify-content: center;
+}

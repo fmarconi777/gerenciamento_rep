@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaClock, FaHeadset } from 'react-icons/fa';
 import { AiFillSetting, AiOutlineDashboard } from 'react-icons/ai';
+import { GiArchiveResearch } from 'react-icons/gi';
 import '../styles/components/sidebar.css'
 
 function ButtonsNav (props) {
@@ -51,21 +52,30 @@ function SideBar(props) {
             </div>
             <aside className="main-sidebar" >
                 <ButtonsNav>
-                    <ButtonDrop leftIcon={<AiOutlineDashboard/>} name="Início" link="/app" />
+                    <ButtonDrop leftIcon={<AiOutlineDashboard/>} name="Início" link="/" />
                     <ButtonDrop leftIcon={<FaClock/>} name="Relógios" link="#" >
                         <DropdownMenu>
-                            <DropdownItem item_name="Em operação" link="/app/operational" />
-                            <DropdownItem item_name="Reserva" link="/app/inreserve" />
-                            <DropdownItem item_name="Em manutenção" link="/app/maintenance" />
+                            <DropdownItem item_name="Em operação" link="/operational" />
+                            <DropdownItem item_name="Reserva" link="/inreserve" />
+                            <DropdownItem item_name="Em manutenção" link="/maintenance" />
                         </DropdownMenu>
                     </ButtonDrop>
                     <ButtonDrop leftIcon={<FaHeadset/>} name="Chamados" link="#" >
                         <DropdownMenu>
-                            <DropdownItem item_name="Abertos" link="/app/opencalls" />
-                            <DropdownItem item_name="Fechados" link="/app/closedcalls" />
+                            <DropdownItem item_name="Abertos" link="/opencalls" />
+                            <DropdownItem item_name="Fechados" link="/closedcalls" />
                         </DropdownMenu>
                     </ButtonDrop>
-                    <ButtonDrop leftIcon={<AiFillSetting/>} name="Configurações" link="/app/configuration" />
+                    <ButtonDrop leftIcon={<GiArchiveResearch/>} name="Cadastros" link="#" >
+                        <DropdownMenu>
+                            <DropdownItem item_name="Cadastrar local" link="/registerlocation" />
+                            <DropdownItem item_name="Cadastrar terminal" link="/registerterminal" />
+                            <DropdownItem item_name="Cadastrar relógio" link="/registerrep" />
+                            <DropdownItem item_name="Cadastrar defeito" link="/registerdefect" />
+                            <DropdownItem item_name="Cadastrar funcionário" link="/registeremployee" />
+                        </DropdownMenu>
+                    </ButtonDrop>
+                    <ButtonDrop leftIcon={<AiFillSetting/>} name="Configurações" link="/configuration" />
                 </ButtonsNav>
             </aside>
         </nav>

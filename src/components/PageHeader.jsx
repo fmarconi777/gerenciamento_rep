@@ -8,7 +8,7 @@ function PageHeader() {
     return (
         <header className="nav-header">
             <div className="top-bar-container">
-                <Link to="/" className="logout-button" >
+                <Link to="/login" onClick={() => localStorage.clear()} className="logout-button" >
                     <FaSignOutAlt size={22} color="rgba(0, 0, 0, 0.7)" />
                 </Link>
             </div>

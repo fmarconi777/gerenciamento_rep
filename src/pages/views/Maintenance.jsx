@@ -1,15 +1,16 @@
 import React from 'react';
 import '../../styles/views/maintenance.css';
+import '../../styles/views/viewbackground.css';
 
 function Maintenance(props) {
     return (
-        <div className="maintenance" >
+        <div className="viewbackground" >
             <table className="Table">
-                <caption>Relógios em operação</caption>
+                <caption>Relógios em manutenção</caption>
                 <thead>
                     <tr>
                         <th>Patrimônio</th>
-                        <th>Local</th>
+                        <th>Última instalação</th>
                         <th>Terminal</th>
                         <th>IP</th>
                     </tr>

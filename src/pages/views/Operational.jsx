@@ -1,9 +1,10 @@
 import React from 'react';
 import '../../styles/views/operational.css';
+import '../../styles/views/viewbackground.css';
 
 function Operational(props) {
     return (
-        <div className="Operational">
+        <div className="viewbackground">
             <table className="Table">
                 <caption>Relógios em operação</caption>
                 <thead>

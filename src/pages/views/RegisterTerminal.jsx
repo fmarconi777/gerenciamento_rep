@@ -1,13 +1,12 @@
 import React from 'react';
-import '../../styles/views/closedcalls.css'
 import '../../styles/views/viewbackground.css'
 
-function ClosedCalls(props) {
+function RegisterTerminal(props) {
     return (
         <div className="viewbackground" >
-            <h2>Chamados fechados</h2>
+            <h2>Terminal</h2>
         </div>
     )
 };
 
-export default ClosedCalls;
+export default RegisterTerminal;
