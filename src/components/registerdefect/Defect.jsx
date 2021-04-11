@@ -5,7 +5,7 @@ function Defect(props) {
    
     return (
         <div className="register" >
-            <h2>Cadastro de Local</h2>
+            <h2>Cadastro de Defeitos</h2>
             {
                 props.tipo &&
                 <div className={props.tipo === true ? "error" : ""} >
